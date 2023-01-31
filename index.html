@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myrestaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+      <div class="container">
+        <header class="header1">
+            <h3>Glacier Restraunt</h3>
+        </header>
+        <form class="form1" onsubmit="save(event)">
+            <label>Choose Price:</label>
+           <input class="input1" name="price" type="number" id="rupees" required><br/><br/>
+           <label>Choose Dish:</label>
+           <input class="input2" name="dish" type="text" id="order" required><br/><br/>
+           <label>Choose a Table:</label>
+          <select name="table" id="tableNo">
+            <option>select</option>
+            <option>Table 1</option>
+            <option>Table 2</option>
+            <option>Table 3</option>
+            <option>Table 4</option>
+          </select>
+          <button>Add to bill</button><br/><br/>
+        </form><br><br/><br/>
+        
+            <h3 id="table1">Table 1:</h3>
+            <h3 id="table2">Table 2:</h3>
+            <h3 id="table3">Table 3:</h3>
+            <h3 id="table4">Table 4:</h3>
+        
+      </div>
+      
+     
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.6/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
