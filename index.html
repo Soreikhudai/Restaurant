@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myrestaurant</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-<body>
-    <div class="main">
-      <div class="container">
-        <header class="header1">
-            <h3>Glacier Restraunt</h3>
-        </header>
-        <form class="form1" onsubmit="save(event)">
-            <label for="input2">Choose Dish:</label>
-           <input class="input2" name="dish" type="text" id="order" required placeholder="enter dish"><br/><br/>
-            <label for="input1">Choose Price:</label>
-           <input class="input1" name="price" type="number" id="rupees" required placeholder="enter amount"><br/><br/>
-           <label for="input3">Choose a Table:</label>
 
-          <select name="table" id="tableNo">
-            <option value="okay1">Table 1</option>
-            <option value="okay2">Table 2</option>
-          </select>
+<body class="main">
+    <div class="container">
+        <div class="header">
+            <h2 class="h3">Glacier restraunt</h2>
 
-          <button class="btn">Add to bill</button><br/><br/>
-        </form><br><br/><br/>
-        
-            <ul id="t1">Table 1:</ul>
-            <ul id="t2">Table 2:</ul>
-        
-      </div>
-      
-     
+        </div>
+        <div class="card">
+            <form onsubmit="save(event)">
+                <label for="name">Name:</label><br>
+                <input name="username" id="name" class="name" type="text" placeholder="enter username" required><br><br>
+                <label for="item">Items:</label><br>
+                <input name="dish" id="item" class="item" type="text" placeholder="type your order" required><br><br>
+                <label for="amount">Amount:</label><br>
+                <input name="rate" class="amount" id="amount" type="number" placeholder="mention amount" required><br><br>
+                <label for="table">Table:</label>
+                <select class="table" name="table" id="tab">
+                    <option value="table1">Table I</option>
+                    <option value="table2">Table II</option>
+                    <option value="table3">Table III</option>
+                </select>
+                <button class="button" id="btn">submit</button><br><br><br><br>
+                <p>By submitting you agree to our <i class="italic">terms and conditions</i></p><br><br><br/><br><br/>
+                <ul id="t1">Table-1</ul>
+                <ul id="t2">Table-2</ul>
+                <ul id="t3">Table-3</ul>
+            </form>
+
+        </div>
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.6/axios.min.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
